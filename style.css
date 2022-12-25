@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&family=Montserrat:ital,wght@1,700&display=swap');
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: hsl(30, 38%, 92%);
+}
+.container {
+ display: flex;
+ justify-content: center;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+img{
+    width: 33%;
+    border-radius: 10px 0px 0px 10px;
+}
+.left-side{
+    display: contents;
+}
+.right-side{
+    width: 33%;
+    background-color: white;
+    padding: 20px 30px 20px 40px;
+    border-radius: 0px 10px 10px 0px;
+}
+#title{
+    letter-spacing: 5px;
+    color: rgb(170, 169, 169);
+    margin: 10px 0px 30px 0px;
+}
+h3{
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    font-family: 'Fraunces', serif;
+    text-transform: capitalize;
+}
+.intro {
+   font-size: 14px;
+   line-height: 1.5;
+   color: rgb(103, 103, 103);
+   font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    display: inline-block;
+    font-family: 'Fraunces', serif;
+    color:hsl(158, 36%, 37%);
+}
+del {
+    color: rgb(103, 103, 103);
+    font-size: 14px;
+    margin-left: 35px;
+    font-family: 'Fraunces', serif;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 219px;
+    height: 50px;
+    border: none;
+    background-color:hsl(158, 36%, 37%);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+.btn:hover {
+    background-color: hsl(89, 100%, 10%);
+}
+@media screen {
+    @media (min-width:375px) and (max-width:400px) {
+        .card {
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            width: 90%;
+            border-radius: 10px 10px 0px 0px;
+        }
+        .right-side{
+            width: 90%;
+            border-radius: 0px 0px 10px 10px;
+    
+        }
+    }
+    @media (min-width:401px) and (max-width:600px) {
+        .card {
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            width: 80%;
+            border-radius: 10px 10px 0px 0px;
+        }
+        .right-side{
+            width: 80%;
+            border-radius: 0px 0px 10px 10px;
+            text-align: center;
+    
+        }
+        .btn{ 
+           display: inline-flex;
+        }
+    }
+    @media (min-width:601px) and (max-width:900px){
+        .card {
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            width: 70%;
+            border-radius: 10px 10px 0px 0px;
+        }
+        .right-side{
+            width: 70%;
+            border-radius: 0px 0px 10px 10px;
+            text-align: center;
+    
+        }
+        .btn{ 
+           display: inline-flex;
+        }
+    }
+}
